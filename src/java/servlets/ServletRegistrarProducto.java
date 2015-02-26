@@ -88,9 +88,8 @@ public class ServletRegistrarProducto extends HttpServlet {
     String categoria= request.getParameter("categoria");
     System.out.println(categoria);
       
-      //Part filePart= request.getPart("foto");
-      //String fileName= filePart.getSubmittedFileName();
-      //InputStream fileContent=filePart.getInputStream();
+    
+      
       
        ProductoDTO producto= new ProductoDTO();
         producto.setNombreProducto(nombreProducto);
@@ -98,7 +97,7 @@ public class ServletRegistrarProducto extends HttpServlet {
        producto.setDescripcion(descripcion);
        producto.setAutor(autor);
        producto.setCategoria(categoria);
-     // producto.setFoto((FileInputStream)fileContent);
+     
         
       ServicioDAO dao= new ServicioDAO();
       dao.insertarProducto(producto);

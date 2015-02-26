@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-feb-2015, 17:25:00
+    Author     : Gianarlo
+*/
+
+
+body { font-family: Verdana, Arial, sans-serif; 
+       font-size: smaller; 
+       padding: 50px; 
+       color: #555;
+       background-image: url(../images/fondoAdmin.jpg); 
+       background-repeat: no-repeat;
+}
+
+h1 { text-align: left; 
+     letter-spacing: 6px; 
+     font-size: 1.9em; 
+     color: #7F0DD0; 
+     font-weight: normal; 
+     width: 450px;
+}
+
+table { width: 500px;
+        padding: 10px;
+        background-color: #c5e7e0;
+}
+
+th { text-align: left;
+     border-bottom: 1px solid;
+}
+
+td { padding: 10px;
+}
+
+a:link {
+color: #be7429;
+font-weight: normal;
+text-decoration: none;
+}
+
+a:link:hover {
+color: #be7429;
+font-weight: normal;
+text-decoration: underline;
+}

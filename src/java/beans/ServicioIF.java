@@ -17,5 +17,13 @@ public interface ServicioIF {
  
  public void insertarProducto(ProductoDTO pa);
   
+ public boolean adminAcceder(String login, String password);
+ 
+ public void actualizarCliente(ClienteDTO c);
+ 
+ public void registrarPacks();
+ 
+ public void actualizarCreditos(PackCreditosDTO pk);
+ 
  
 }

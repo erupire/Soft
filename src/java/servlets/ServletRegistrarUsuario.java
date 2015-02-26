@@ -102,6 +102,7 @@ public class ServletRegistrarUsuario extends HttpServlet {
                 
 		ServicioDAO dao=new ServicioDAO();
 		dao.registrarCliente(c);
+                dao.registrarPacks();
                 
    processRequest(request, response);
         

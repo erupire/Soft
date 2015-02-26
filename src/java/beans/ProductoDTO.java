@@ -7,6 +7,7 @@
 package beans;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 
 /**
  *
@@ -15,13 +16,13 @@ import java.io.FileInputStream;
 public class ProductoDTO {
     
 private String nombreProducto,descripcion,autor,categoria;
-private FileInputStream foto;
+private InputStream foto;
 private int precioBase;
 
     public ProductoDTO() {
     }
 
-    public ProductoDTO(String nombreProducto, String descripcion, String autor, String categoria, FileInputStream foto, int precioBase) {
+    public ProductoDTO(String nombreProducto, String descripcion, String autor, String categoria, InputStream foto, int precioBase) {
         this.nombreProducto = nombreProducto;
         this.descripcion = descripcion;
         this.autor = autor;
@@ -29,7 +30,6 @@ private int precioBase;
         this.foto = foto;
         this.precioBase = precioBase;
     }
-
 
     public String getNombreProducto() {
         return nombreProducto;
@@ -63,11 +63,11 @@ private int precioBase;
         this.categoria = categoria;
     }
 
-    public FileInputStream getFoto() {
+    public InputStream getFoto() {
         return foto;
     }
 
-    public void setFoto(FileInputStream foto) {
+    public void setFoto(InputStream foto) {
         this.foto = foto;
     }
 
@@ -79,6 +79,7 @@ private int precioBase;
         this.precioBase = precioBase;
     }
 
+  
 
 
 
